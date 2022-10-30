@@ -1,0 +1,12 @@
+version: '3.7'
+ 
+services:
+  catspic:
+    container_name: catspic
+    hostname: catspic
+    build: ./
+    restart: always
+    ports:
+      - 80:80
+    env_file:
+      - .env
